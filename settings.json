@@ -1,0 +1,338 @@
+{
+  "vim.hlsearch": true,
+  "vim.foldfix": true,
+  "vim.useSystemClipboard": true,
+  "json.schemas": [],
+  "vim.smartRelativeLine": true,
+  "editor.wordWrap": "bounded",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.lineNumbers": "relative",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.fontFamily": "fira code",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontWeight": "400",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.tree.renderIndentGuides": "always",
+  "screencastMode.mouseIndicatorSize": 40,
+  // "workbench.startupEditor": "terminal",
+  "breadcrumbs.enabled": false,
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "debug.console.fontSize": 18,
+  "terminal.integrated.fontSize": 15,
+  "vim.easymotionMarkerBackgroundColor": "#0000::",
+  "vim.easymotionDimColor": "blue",
+  "vim.commandLineModeKeyBindings": [],
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["leader", "h"], "commands": ["vscode-harpoon.editEditors"] },
+    { "before": ["<leader>", "H"], "commands": ["vscode-harpoon.addEditor"] },
+
+    {
+      "before": ["<leader>", "f", "h"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["<leader>", "f", "h"]
+    },
+
+    { "before": ["<leader>", "d", "m"], "commands": [":delmarks!"] },
+
+    {
+      "before": ["<leader>", "b", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+
+    {
+      "before": ["leader", "b", "c"],
+      "commands": ["bookmarks.clear"]
+    },
+    {
+      "before": ["leader", "b", "l"],
+      "commands": ["bookmarks.list"]
+    },
+
+    // FILE Tree
+    {
+      "before": ["<leader>", "z"],
+      "commands": [
+        {
+          "command": "workbench.action.toggleZenMode"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "l", "s"],
+      "commands": [
+        {
+          "command": "workbench.action.showEditorsInActiveGroup"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "l", "s"],
+      "commands": [
+        {
+          "command": "workbench.action.showEditorsInActiveGroup"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen"
+        }
+      ]
+    },
+
+    {
+      "before": ["<leader>", "f", "m"],
+      "commands": [
+        {
+          "command": ":marks"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "f", "t"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.gotoSymbol",
+          "args": {
+            "prefix": "@"
+          }
+        }
+      ]
+    },
+
+    {
+      "before": ["<leader>", "q"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":q",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "w", "v"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":split",
+          "args": []
+        }
+      ]
+    },
+
+    {
+      "before": ["<leader>", "w", "s"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":vs",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "f", "g"],
+      "commands": [
+        {
+          "command": "quickgrep.action",
+          "title": "Quick Grep"
+        }
+      ]
+    },
+
+    // {
+    //   "before": ["<leader>", "f"],
+    //   "commands": ["revealInExplorer"]
+    // },
+    {
+      "before": ["ctrl+u"],
+      "after": ["ctrl+u", "z", "z"]
+    },
+
+    {
+      "before": ["ctrl+d"],
+      "after": ["ctrl+d", "z", "z"]
+    },
+
+    // easy-motion
+    {
+      "before": ["J"],
+      "after": ["<leader>", "<leader>", "w"]
+    },
+
+    {
+      "before": ["K"],
+      "after": ["<leader>", "<leader>", "b"]
+    },
+    // NAVIGATION
+    // switch between buffers
+    { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
+    { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] }
+  ],
+  "vim.easymotionKeys": "hklyuionmqwertzxcvbasdgjf",
+  "workbench.editor.decorations.colors": false,
+  "editor.cursorBlinking": "solid",
+  "vim.statusBarColorControl": false,
+  "vim.statusBarColors.normal": ["#8FBCBB", "#000"],
+  "vim.statusBarColors.insert": ["#BF616A", "#000"],
+  "vim.statusBarColors.visual": ["#B48EAD", "#000"],
+  "vim.statusBarColors.visualline": ["#B48EAD", "#000"],
+  "vim.statusBarColors.visualblock": ["#A3BE8C", "#000"],
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "workbench.colorCustomizations": {
+    // line font color
+    "editorLineNumber.foreground": "#f0ede0bb",
+    "statusBar.background": "#BF616A",
+    "statusBar.noFolderBackground": "#BF616A",
+    "statusBar.debuggingBackground": "#BF616A",
+    "statusBar.foreground": "#000",
+    "statusBar.debuggingForeground": "#000"
+    //  "editor.background": "#0f0e0e"
+  },
+  "vim.neovimPath": "/usr/bin/nvim",
+  "vim.neovimUseConfigFile": true,
+  "settingsSync.ignoredSettings": [
+    "vim.neovimUseConfigFile",
+    "-vim.neovimPath",
+    "-vim.neovimConfigPath"
+  ],
+  "vim.neovimConfigPath": "/home/anthony/.config/nvim/init.lua",
+  "editor.inlayHints.fontSize": 4,
+  "workbench.layoutControl.enabled": false,
+  "workbench.settings.applyToAllProfiles": [],
+  "zenMode.hideLineNumbers": false,
+
+  "editor.cursorSurroundingLines": 8,
+  "vim.whichwrap": "",
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+
+  "todohighlight.isEnable": false,
+  "vscode-neovim.neovimExecutablePaths.linux": "/opt/nvim//nvim",
+  "vscode-neovim.neovimExecutablePaths.darwin": "",
+  "vscode-neovim.neovimExecutablePaths.win32": "",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "glassit.alpha": 240,
+  "window.customTitleBarVisibility": "auto",
+  "window.commandCenter": false,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.inlayHints.padding": true,
+  "vim.commandLineModeKeyBindingsNonRecursive": [],
+  "vim.easymotion": true,
+  "editor.fontSize": 16,
+  "vscode-neovim.revealCursorScrollLine": true,
+  "vscode-neovim.compositeKeys": {},
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.preferredHighContrastColorTheme": "Visual Studio 2017 Dark - C++",
+  "emmet.preferences": {},
+  "zenMode.showTabs": "single",
+  "editor.stickyScroll.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "mssql.connections": [
+    {
+      "server": "forumflowdb.database.windows.net",
+      "database": "",
+      "authenticationType": "SqlLogin",
+      "user": "anthonyduong789",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true
+    },
+    {
+      "server": "forumflowdb.database.windows.net",
+      "database": "forumflow",
+      "authenticationType": "SqlLogin",
+      "user": "anthonyduong789",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true,
+      "profileName": "forumflowdb"
+    },
+    {
+      "server": "forumflowdb.database.windows.net",
+      "database": "forumflow",
+      "authenticationType": "SqlLogin",
+      "user": "anthonyduong789",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true,
+      "profileName": "testConnect"
+    }
+  ],
+  "mssql.enableQueryHistoryCapture": false,
+  "[sql]": {
+    "editor.defaultFormatter": "ms-mssql.mssql"
+  },
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+  "workbench.editorAssociations": {
+    "*.cache": "default"
+  },
+  "editor.cursorStyle": "line-thin",
+  "settingsSync.ignoredExtensions": []
+}
